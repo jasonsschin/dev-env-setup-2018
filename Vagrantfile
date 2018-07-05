@@ -47,7 +47,7 @@ Vagrant.configure("2") do |config|
     v.optimize_power_consumption = false
     v.memory = 8192
     v.cpus = 2
-    v.customize ["set", :id, "--device-set=hdd0", "--size=80G", "--no-fs-resize" ]
+    v.customize ["set", :id, "--device-set=hdd0", "--size=100G", "--no-fs-resize" ]
   end
 
 
