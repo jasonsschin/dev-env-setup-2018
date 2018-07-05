@@ -1,6 +1,14 @@
 $paths = @(
 	'\\mac\projects\anz',
-	'\\mac\projects\anz\lib-fileactive'
+	'\\mac\projects\anz\Fileactive\lib-fileactive'
+	'\\mac\projects\anz\Core'
+	'\\mac\projects\anz\PSI',
+    '\\mac\projects\anz\nas\Applications',
+    '\\mac\projects\anz\nas\Process\ContentStore',
+    '\\mac\projects\anz\nas\Customer',
+    '\\mac\projects\anz\nas\Process',
+    '\\mac\projects\anz\nas\Working'
+
 )
 
  Get-PSDrive -PSProvider Filesystem
