@@ -105,11 +105,11 @@ Vagrant.configure("2") do |config|
   #   apt-get install -y apache2
   # SHELL
   #config.vm.provision :shell, :inline => $devenv
-  config.vm.provision :shell, :path => "./scripts/Bootstrap.ps1"
+  config.vm.provision :shell, :path => "./scripts/Bootstrap.ps1", run: "always"
   #config.vm.provision :shell, :path => "./scripts/Enable-Windows-Features.cmd"
   config.vm.provision :shell, :path => "./scripts/Set-DvdDrvLetter.ps1"
   #config.vm.provision :shell, :path => "./scripts/Install-Tools.ps1"
-  config.vm.provision :shell, :path => "./scripts/Remap-Vagrant-Shares.ps1"
-  config.vm.provision :shell, :path => "./scripts/Create-Required-Folders.ps1"
+  config.vm.provision :shell, :path => "./scripts/Remap-Vagrant-Shares.ps1", run: "always"
+  config.vm.provision :shell, :path => "./scripts/Create-Required-Folders.ps1", run: "always"
 
 end
