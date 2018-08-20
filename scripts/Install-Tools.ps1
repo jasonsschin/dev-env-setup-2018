@@ -10,6 +10,7 @@ $software = @(
     '7Zip',
     'Fiddler',
     'netfx-4.6.1-devpack',
+    'netfx-4.7-devpack',
     'netfx-4.7.1-devpack',
     'webpi',
     'linqpad',
