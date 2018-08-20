@@ -14,7 +14,8 @@ $software = @(
     'netfx-4.7.1-devpack',
     'webpi',
     'linqpad',
-    'procmon'
+    'procmon',
+    'cmder'
 )
 
 $optionalSoftware = @(
