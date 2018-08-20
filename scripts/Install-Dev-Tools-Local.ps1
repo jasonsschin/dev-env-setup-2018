@@ -11,6 +11,7 @@
     Write-Host "3: Press '3' to install Visual Studio 2017 Professional (from the local cache)."
     Write-Host "4: Press '4' to update nuget sources file."
     Write-Host "5: Press '5' to clean up SQL Server 2017 iso file."
+    Write-Host "5: Press '6' to copy hosts file."
     Write-Host "Q: Press 'Q' to quit."
 }
 
@@ -53,6 +54,9 @@ do
             Write-Host "Clean up SQL Server 2017 file"
             Remove-Item c:\windows\temp\SQLServer2017-x64-ENU-Dev.iso
          } '6' {
+            # clean up SQL Server 2017 file
+            Write-Host "Copy hosts file"
+            Copy-Item \\mac\vagrant\config\hosts C:\Windows\System32\drivers\etc
 
          } 'q' {
              return
